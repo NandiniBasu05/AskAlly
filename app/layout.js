@@ -13,7 +13,7 @@ export const metadata = {
   title: "AskAlly",
   description: "AI Career Coach",
    icons: {
-    icon: "/a-logo.png",
+    icon: "/a-favicon.png",
   },
 };
 
