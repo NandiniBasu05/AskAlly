@@ -38,6 +38,7 @@ export const generateAIInsights = async (industry) => {
 
 export async function getIndustryInsights() {
   const { userId } = await auth();
+  console.log("DEBUG: Clerk userId = ", userId);
   if (!userId) throw new Error("Unauthorized");
 
   const user = await db.user.findUnique({
@@ -49,7 +50,11 @@ export async function getIndustryInsights() {
 
   if (!user) throw new Error("User not found");
 
-  // If no insights exist, generate them
+  
+  if (!user.industry) {
+    throw new Error("User industry is not set. Please complete your profile.");
+  }
+
   if (!user.industryInsight) {
     const insights = await generateAIInsights(user.industry);
 
