@@ -71,3 +71,12 @@ export async function getIndustryInsights() {
 
   return user.industryInsight;
 }
+export const getIndustryList = async () => {
+  return await db.industry.findMany({
+    select: {
+      id: true,
+      name: true,
+      subIndustries: true,
+    },
+  });
+};
