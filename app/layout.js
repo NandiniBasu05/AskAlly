@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"]});
 export const metadata = {
   title: "AskAlly",
   description: "AI Career Coach",
+   icons: {
+    icon: "/a-favicon.ico", 
+  },
   
 };
 
@@ -21,12 +24,9 @@ export default function RootLayout({ children }) {
       baseTheme:dark,
     }}>
     <html lang="en" suppressHydrationWarning>
-       <head>
-          <link rel="icon" href="/a-favicon.png" type="image/png" sizes="any" />
-        </head>
-      <body
+      <body>
         className={`${inter.className}`}
-      >
+      
          <ThemeProvider
             attribute="class"
             defaultTheme="dark"
