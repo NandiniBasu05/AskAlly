@@ -125,9 +125,6 @@ export default function LandingPage() {
   height={40}
   src={testimonial.image}
   alt={testimonial.author}
-  onError={(e) => {
-    e.currentTarget.src = '/default-avatar.jpg'; 
-  }}
   className="rounded-full object-cover border-2 border-primary/20"
 />
                       </div>
