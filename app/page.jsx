@@ -119,7 +119,8 @@ export default function LandingPage() {
                 <CardContent className="pt-6">
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
-                      <Image
+                      <div className="relative h-12 w-12 flex-shrink-0">
+                        <Image
   width={40}
   height={40}
   src={testimonial.image}
