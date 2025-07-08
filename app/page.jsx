@@ -81,7 +81,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+    
       <section className="w-full py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
@@ -120,7 +120,7 @@ export default function LandingPage() {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="relative h-12 w-12 flex-shrink-0">
-                        <Image
+                        <img
   width={40}
   height={40}
   src={testimonial.image}
@@ -157,7 +157,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      
       <section className="w-full py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
